@@ -1,0 +1,56 @@
+.Hero{
+   background-image: url(/unsplash_w3eFhqXjkZE.png); 
+}
+body{
+    margin: 0;
+
+}
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+header{
+    display: grid;
+    grid-template: 58px 58px / 3fr 1fr 1fr 1fr;
+
+}
+
+
+.Contact{
+    grid-row:span 2;
+    background-color: white;
+    color: black;
+
+}
+
+header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+    border-left: white solid;
+}
+
+.logo{
+    grid-row:span 2;
+    display: flex;
+    justify-content: start;
+    padding: 0 33%;
+    font-size: xx-large;
+    color: white;
+    font-weight: 700;
+
+}
+
+.logo a {
+    border: none;
+}
+header svg{
+    margin-right: 5px;
+}
+
+.borderbutton{
+    border-bottom: white solid;
+}

@@ -1,5 +1,6 @@
 .Hero{
-   background-image: url(/unsplash_w3eFhqXjkZE.png); 
+   background-image: url(/unsplash_w3eFhqXjkZE.png);
+   background-size: cover; 
 }
 body{
     margin: 0;
@@ -13,7 +14,7 @@ a{
 header{
     display: grid;
     grid-template: 58px 58px / 3fr 1fr 1fr 1fr;
-
+    border-bottom: white solid;
 }
 
 
@@ -53,4 +54,60 @@ header svg{
 
 .borderbutton{
     border-bottom: white solid;
+}
+
+
+.invest{
+    padding: 100px;
+}
+
+.invest h1{
+    color: white;
+    font-size: 100px;
+}
+
+.invest p{
+    color: white;
+    font-size: 20px;
+}
+
+.scrollbutt{
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center ;
+    gap: 20px;
+}
+
+
+.Witha{
+    display: flex;
+    justify-content: space-around;
+    background-color:gray;
+    color: white;
+    font-size: 25px;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.propIQ{
+position: relative;
+padding: 100px;
+}
+.propIQ img{
+    position: absolute;
+    right: 100px;
+}
+
+.propIQ h2{
+    font-size: 50px;
+}
+
+.propIQ p{
+ font-size: 20px;
+ background-color: #004E92;
+ color: white;
+ position: absolute;
+ padding: 10px;
 }

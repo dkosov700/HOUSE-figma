@@ -96,18 +96,78 @@ position: relative;
 padding: 100px;
 }
 .propIQ img{
-    position: absolute;
-    right: 100px;
+position: absolute;
+right: 100px;
+top: 100px;
+z-index: -1;
 }
+
 
 .propIQ h2{
     font-size: 50px;
+    margin-top: 20%;
 }
 
 .propIQ p{
- font-size: 20px;
+ font-size: 28px;
  background-color: #004E92;
  color: white;
- position: absolute;
- padding: 10px;
+ padding: 50px;
+ width: fit-content;
+}
+
+.SERVICES{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 100px;
+    gap: 30px;
+}
+.SERVICES img{
+    width: 100%;
+}
+
+
+.SERVICEP{
+    background-color:white;
+    color: black;
+    padding: 50px;
+    font-size: 24px;
+    margin: 0;
+}
+.SERVICET p{
+    margin: 0;
+    padding: 15px 10px;
+    font-size: 28px;
+    width: 100%;
+    border-bottom: solid 1px grey;
+}
+
+
+.Ourprojects{
+position: relative;
+padding: 100px;
+
+}
+
+.ourprojectstext{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    text-align: end;
+}
+
+.ourprojectstext p{
+    background-color:#004E92;
+    font-size: 28px;
+    padding: 50px;
+    color: white;
+}
+.ourprojectstext h1{
+    margin-bottom: 20%;
+}
+
+.ourprojectstext h2{
+    font-size: 28px;
 }

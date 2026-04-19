@@ -238,3 +238,14 @@ footer button{
     align-items: center;
     width: 100%;
 }
+
+.market{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 150px;
+}
+
+.caRD-IMG{
+    width:100% ;
+}

@@ -1,7 +1,4 @@
-  let parametr = location
-console.log(location)
-  
-  let a= [
+let a= [
     {
     name: 'private_home',
     size: '120m',
@@ -60,20 +57,7 @@ console.log(location)
   ]
 
 
+  let parametr =location.search.replace('?parametr=',    '')
 
-
-let market = document.getElementById('market')
-
-for (let i = 0; i < a.length; i++){
-    let object = a[i]
-    market.innerHTML =  market.innerHTML + `<div class="card">
-    <a href="/product.html?parametr=${object.name}">
-            <img class="caRD-IMG" src="${object.image}" alt="" >
-            <h1>${object.name}</h1>
-            <p>${object.description}</p>
-            <p class="cost">${object.prise}</p>
-            <button>Купить</button>
-            <a/>
-        </div> `
-}
-
+  let name = document.getElementById('name')
+  name.innerHTML = parametr

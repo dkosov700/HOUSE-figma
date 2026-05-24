@@ -3,60 +3,46 @@ console.log(location)
   
   let a= [
     {
-    name: 'private_home',
-    size: '120m',
-    rooms: 8,
-    floor: 5,
+    name: 'Cottage',
+    size: 'Size: 100m',
+    rooms: 'Rooms: 8',
+    floor: 'Floor: 2',
     description: 'Уютный дом, площадью 100 м²,создан специально для семьи с ребенком, с акцентом на комфорт и стиль. Дом сочетает в себе функциональность и современный дизайн, обеспечивая все необходимое для жизни за городом.',
-    address: "Университетская 142/25 ",
-    prise: '220000$',
-    sold: true,
-    image: 'https://avatars.mds.yandex.net/i?id=615ad5781faa0db5a68f4cc1e80bc708_l-12816737-images-thumbs&n=13'
+    address: 'Address: Университетская 142/25 ',
+    price: ' Prise: 220000$',
+    photo:'https://avatars.mds.yandex.net/i?id=615ad5781faa0db5a68f4cc1e80bc708_l-12816737-images-thumbs&n=13'
  },
  {
     name: 'Flat',
-    size: '65m',
-    rooms: 4,
-    floor: 6,
-    description: 'Уютная квартира в элитном доме по хорошей цене',
+    size: 'Size: 60m',
+    rooms:'Rooms: 3',
+    floor: 'Floor: 6',
+    description: 'Дизайнерская квартира — воплощение современного комфорта и эстетики. Просторное помещение,которое объединяет гостиную, кухню и зону отдыха. Нейтральная цветовая гамма создаёт уютную атмосферу. Идеальное место для жизни и вдохновения.',
     address: "Чеховская 8 ",
-    prise: '77000$',
-    sold: true,
-    image: 'https://cdn0.divan.ru/img/v1/aD6SCpsY4BRl-aDFB4FJQ5xasBnIR1u4f63ScfZl1gM/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi9ja2VkaXRvci93aWtpLWFydGljbGUvMjk5My82NGYwNDNmZDkyOTI3LmpwZw.jpg'
+    price: 'Prise: 77000$',
+    photo: 'https://cdn0.divan.ru/img/v1/aD6SCpsY4BRl-aDFB4FJQ5xasBnIR1u4f63ScfZl1gM/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi9ja2VkaXRvci93aWtpLWFydGljbGUvMjk5My82NGYwNDNmZDkyOTI3LmpwZw.jpg'
  },
  {
     name: 'luxury_apartment',
-    size: '123m',
-    rooms: 7,
-    floor: 3,
-    description: 'Двухуровневая квартира в центре',
+    size: 'Size: 123m',
+    rooms: 'Rooms: 3',
+    floor: 'Floor: 5',
+    description: 'Двухуровневая квартира — простор и свобода планировки. На первом уровне расположены гостиная с панорамными окнами, кухня‑студия. Второй уровень - спальня с выходом на балкон, детская и рабочий кабинет.Идеальна для семьи или тех, кто ценит функциональность и стиль.',
     address: "Маршала Жукова 15 ",
-    prise: '280000$',
-    sold: true,
-    image: 'https://images.cdn-cian.ru/images/2830749129-1.jpg'
+    price: 'Prise: 280000$',
+    photo: 'https://images.cdn-cian.ru/images/2830749129-1.jpg'
  },
  {
     name: 'apartment',
     size: '55m',
-    rooms: 2,
-    floor: 6,
-    description: 'Вторичная квартира с элитным ремонтом',
+    rooms: 'Rooms: 5',
+    floor: 'Floor: 5',
+    description: 'Уютная студия в современном доме — идеальное. Просторная комната объединена с кухней, создаёт ощущение свободы и лёгкости. В квартире есть всё необходимое для комфортного проживания: удобная зона отдыха, функциональная кухня и компактная ванная. Отличный вариант для тех, кто ценит простор и минимализм.',
     address: "Пр.Мира 15",
-    prise: '55000$',
-    sold: true,
-    image: 'https://i.pinimg.com/736x/94/84/6b/94846b635b71ac09bbe36b3d2fdfdd72.jpg'
+    price: 'Prise: 55000$',
+    photo: 'https://i.pinimg.com/736x/94/84/6b/94846b635b71ac09bbe36b3d2fdfdd72.jpg'
  },
- {
-    name: 'house',
-    size: '150m',
-    rooms: 4,
-    floor: 21,
-    description: 'Новые квартиры в элитном ЖК',
-    address: "Багратиона 25/5 ",
-    prise: '150000$',
-    sold: true,
-    image: 'https://miriadagroup.ru/wp-content/uploads/2017/03/c01_View050750_resize.jpg'
- }
+ 
   ]
 
 
@@ -66,14 +52,15 @@ let market = document.getElementById('market')
 
 for (let i = 0; i < a.length; i++){
     let object = a[i]
-    market.innerHTML =  market.innerHTML + `<div class="card">
+    market.innerHTML =  market.innerHTML + `
+    <div class="card">
     <a href="/product.html?parametr=${object.name}">
-            <img class="caRD-IMG" src="${object.image}" alt="" >
+            <img class="caRD-IMG" src="${object.photo}" alt="" >
             <h1>${object.name}</h1>
             <p>${object.description}</p>
-            <p class="cost">${object.prise}</p>
+            <p class="cost">${object.price}</p>
             <button>Купить</button>
-            <a/>
+            </a>
         </div> `
 }
 
